@@ -15,6 +15,7 @@
 ## The Mission :detective:
 Debugging is the pinpoint to being a master in any coding language.  
 Everyone gets errors, but the best programmers never let it stop them and they find a way to fix it every time!
+
 [The guide](https://rollbar.com/guides/how-to-debug-php/)
 
 ## Must-have features :bangbang:
