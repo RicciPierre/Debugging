@@ -8,7 +8,7 @@ function new_exercise($x) {
     echo $block;
 
 }
-//you can pass a variable by reference to a function so the function can modify the variable. https://www.php.net/manual/en/language.references.pass.php
+
 
 new_exercise(2);
 
