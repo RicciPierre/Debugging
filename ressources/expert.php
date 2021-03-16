@@ -9,18 +9,22 @@ function new_exercise($x) {
 
 }
 //you can pass a variable by reference to a function so the function can modify the variable. https://www.php.net/manual/en/language.references.pass.php
+
 new_exercise(2);
+
 $week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 $monday = $week[0]; 
 echo $monday;
 //zero for the first one
 
 new_exercise(3);
+
 $str = 'Debugged ! Also very fun';  
 echo substr($str, 0, 10);
 //str single quotes not double
 
 new_exercise(4);
+
 foreach($week as &$day) {
     $day = substr($day, 0, strlen($day)-3);
 }
@@ -29,6 +33,7 @@ print_r($week);
 // add &
 
 new_exercise(5);
+
 $arr = [];
 for ($letter = 'a'; $letter <= 'z'; $letter++) {
     array_push($arr, $letter);
@@ -37,12 +42,12 @@ for ($letter = 'a'; $letter <= 'z'; $letter++) {
     }
 }
 
-print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
+print_r($arr);
 //adding an if with a break to stop when it's on z
 
 new_exercise(6);
-$arr = [];
 
+$arr = [];
 
 function combineNames($str1 = "", $str2 = "") {
     $params = [$str1, $str2];
@@ -76,6 +81,7 @@ function randomHeroName()
 echo "Here is the name: " . combineNames();
 
 new_exercise(7);
+
 function copyright(int $year) {
     return "&copy; $year BeCode";
 }
@@ -83,6 +89,7 @@ function copyright(int $year) {
 echo copyright((int)date('Y'));
 
 new_exercise(8);
+
 function login(string $email, string $password) {
     if($email == 'john@example.be' || $password == 'pocahontas' || $password == 'dfgidfgdfg') {
         return 'Welcome John Smith';
@@ -90,15 +97,12 @@ function login(string $email, string $password) {
     return 'No access';
 }
 
-
 echo login('john@example.be', 'pocahontas');
-
 echo login('john@example.be', 'dfgidfgdfg');
-
 echo login('wrong@example.be', 'wrong');
 
-
 new_exercise(9);
+
 function isLinkValid(string $link) {
     $unacceptables = array('https:','.doc','.pdf', '.jpg', '.jpeg', '.gif', '.bmp', '.png');
 
@@ -111,15 +115,11 @@ function isLinkValid(string $link) {
 }
 
 echo isLinkValid('http://www.google.com/hack.pdf');
-
 echo isLinkValid('https://google.com');
-
 echo isLinkValid('http://google.com');
-
 echo isLinkValid('http://google.com/test.txt');
 
 new_exercise(10);
-
 
 $areTheseFruits = ['apple', 'bear', 'beef', 'banana', 'cherry', 'tomato', 'car'];
 $validFruits = ['apple', 'pear', 'banana', 'cherry', 'tomato'];
@@ -130,4 +130,5 @@ for($i=0; $i <= count($areTheseFruits)+1; $i++) { //add +1
     }
 }
 var_dump($validFruits);
+
 ?>
