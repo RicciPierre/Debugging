@@ -17,6 +17,6 @@ Debugging is the pinpoint to being a master in any coding language.
 Everyone gets errors, but the best programmers never let it stop them and they find a way to fix it every time!
 [The guide](https://rollbar.com/guides/how-to-debug-php/)
 
-## Must-have features bangbang:
+## Must-have features :bangbang:
 Open up the [junior.php.broken](resources/junior.php.broken) file, read the comments, fix the code blocks as requested in the comments
 and put the final file [expert.php](resources/expert.php) in the repository folder as requested.
